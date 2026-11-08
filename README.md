@@ -1,6 +1,10 @@
+<p align="center"><img src="docs/media/banner.png" alt="Jet Lag: every teleport has side effects"></p>
+
 # ✈️ Jet Lag
 
 **Every teleport has side effects.**
+
+![Jet Lag in action](docs/media/hero.gif)
 
 Jet Lag is a server-side plugin for Paper (and Spigot/Purpur) that turns every teleport into a gamble. Use `/tp`, `/tpa`, `/home`, `/spawn` or `/warp` and there's a chance something *happens* when you land: a charged creeper, a lightning bolt, a ring of TNT... or, very rarely, a first-class upgrade.
 
@@ -32,6 +36,16 @@ It's made for friend servers where chaos is the point. **Nobody needs to install
 | `hotbar_shuffle` | Your luggage got mixed up: hotbar shuffled |
 | `drunk` | Nausea and slowness for a few seconds |
 | `first_class` | Rare lucky outcome: free diamonds and fireworks |
+
+### Gallery
+
+| TNT Ring | Sky Drop |
+|---|---|
+| ![TNT Ring](docs/media/tnt_ring.gif) | ![Sky Drop](docs/media/sky_drop.gif) |
+| **Charged Creeper** | **Chicken Party** |
+| ![Charged Creeper](docs/media/charged_creeper.gif) | ![Chicken Party](docs/media/chicken_party.gif) |
+| **Fake Ban** | **Leaderboard** |
+| ![Fake Ban](docs/media/fake_ban.png) | ![/jetlag stats](docs/media/stats.png) |
 
 ## Installation
 
