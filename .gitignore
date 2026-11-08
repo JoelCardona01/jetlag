@@ -5,4 +5,10 @@ out/
 *.iml
 .vscode/
 run/
+run-*/
 .DS_Store
+posts/
+
+# Internal docs (private)
+docs/ARQUITECTURA.md
+docs/PUBLICAR.md
