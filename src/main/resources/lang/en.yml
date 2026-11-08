@@ -1,0 +1,51 @@
+prefix: '&8[&bJet Lag&8] &r'
+
+events:
+  charged_creeper: '&e{player} &7landed next to a &acharged creeper&7. Good luck.'
+  lightning: '&e{player} &7was struck by lightning on arrival. Zeus hates teleporting.'
+  tnt_ring: '&e{player} &7arrived at a &cTNT party&7. RUN!'
+  anvil_rain: '&e{player} &7is in an &8anvil storm&7. Look up!'
+  sky_drop: '&e{player} &7landed... &fway too high&7. MLG time!'
+  fake_creeper: '&e{player} &7heard a hiss behind them... &asurprise!'
+  fake_ban: '&e{player} &7got a fake ban. Did you see their face?'
+  chicken_party: '&e{player} &7landed in a &fchicken party&7.'
+  wrong_destination: '&e{player} &7took a wrong turn. GPS recalculating...'
+  hotbar_shuffle: '&e{player}&7''s luggage got mixed up. Hotbar shuffled!'
+  drunk: '&e{player} &7has terrible &bjet lag&7.'
+  first_class: '&e{player} &7was upgraded to &6&lFIRST CLASS&7! Free diamonds!'
+
+titles:
+  sky-drop:
+    title: '&b&lMLG!'
+    subtitle: '&fYou have a water bucket. Use it.'
+  fake-ban:
+    title: '&4&lBANNED'
+    subtitle: '&cReason: excessive teleporting'
+
+fake-ban-reveal: '&aJust kidding. You are not banned. &7(...yet)'
+wrong-destination:
+  victim: '&7Oops! You landed next to &e{target}&7.'
+  target: '&e{player} &7just fell out of the sky next to you. Say hi.'
+
+help: |-
+  &b&lJet Lag &7- every teleport has side effects
+  &e/jetlag stats &7- who has suffered the most
+  &e/jetlag test <event> [player] &7- trigger an event
+  &e/jetlag chance [0-100] &7- see or change the chance
+  &e/jetlag on|off &7- enable or disable the plugin
+  &e/jetlag reload &7- reload config and language
+no-permission: '&cYou don''t have permission to do that.'
+reloaded: '&aReloaded. &7{count} events enabled.'
+enabled: '&aJet Lag enabled. Teleport at your own risk.'
+disabled: '&cJet Lag disabled. Teleports are safe... for now.'
+chance-current: '&7Current chance: &e{chance}%'
+chance-set: '&7Chance set to &e{chance}%'
+chance-invalid: '&cUse a number between 0 and 100.'
+test-usage: '&7Usage: /jetlag test <event> [player]. Events: &e{events}'
+test-unknown: '&cUnknown event. Events: &e{events}'
+test-ok: '&aFired &e{event} &aon &e{player}&a.'
+test-cannot-run: '&c{event} can''t run right now (e.g. needs another player online, or not in the Nether).'
+player-not-found: '&cPlayer not found (or run it from the console with a player name).'
+stats-self: '&7You have suffered Jet Lag &e{count} &7times.'
+stats-header: '&b&lMost jet-lagged travellers:'
+stats-line: '&7#{rank} &e{player} &7- {count}'

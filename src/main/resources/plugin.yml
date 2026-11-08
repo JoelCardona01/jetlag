@@ -1,0 +1,24 @@
+name: JetLag
+version: '${version}'
+main: dev.jetlag.JetLagPlugin
+api-version: '1.16'
+description: Every teleport has side effects. A funny chaos plugin for friend servers.
+authors: [Joel Cardona]
+website: https://github.com/JoelCardona01/jetlag
+
+commands:
+  jetlag:
+    description: Jet Lag main command.
+    usage: /jetlag help
+    aliases: [jl]
+
+permissions:
+  jetlag.admin:
+    description: Reload, toggle, change chance and test events.
+    default: op
+  jetlag.stats:
+    description: Use /jetlag stats.
+    default: true
+  jetlag.bypass:
+    description: Never get Jet Lag (not even ops have it by default).
+    default: false

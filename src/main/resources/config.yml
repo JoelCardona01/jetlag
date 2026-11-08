@@ -1,0 +1,93 @@
+# ======================================================================
+#  Jet Lag - every teleport has side effects
+#  Docs: https://github.com/JoelCardona01/jetlag
+# ======================================================================
+
+# Master switch. Also toggled in-game with /jetlag on|off
+enabled: true
+
+# Language file in plugins/JetLag/lang/ (bundled: en, es). You can add your own.
+language: en
+
+# Chance (0-100 %) that a teleport triggers an event. /jetlag chance <n>
+chance: 15
+
+# Seconds a player is safe after suffering Jet Lag.
+cooldown-seconds: 10
+
+# Ignore teleports shorter than this many blocks (0 = any teleport counts).
+# Changing worlds always counts.
+min-distance: 0
+
+# Which kinds of teleport trigger Jet Lag.
+#  COMMAND     -> /tp, and also /tpa, /home, /spawn, /warp from EssentialsX, CMI...
+#  ENDER_PEARL -> thrown ender pearls
+#  PLUGIN      -> teleports done by other plugins (portals, minigames...)
+#  Others: NETHER_PORTAL, END_PORTAL, END_GATEWAY, SPECTATE, CHORUS_FRUIT
+trigger-causes:
+  - COMMAND
+
+# Worlds where Jet Lag never happens (e.g. your lobby).
+disabled-worlds: []
+
+# Announce events to the whole server (true) or only to the victim (false).
+broadcast: true
+
+# Whether creepers/TNT spawned by Jet Lag can break blocks. false = no grief.
+block-damage: false
+
+# ----------------------------------------------------------------------
+#  Events. 'weight' = how likely compared to the others (0 disables it).
+# ----------------------------------------------------------------------
+events:
+  charged_creeper:
+    enabled: true
+    weight: 10
+    distance: 4.0
+    speed-level: 2
+  lightning:
+    enabled: true
+    weight: 12
+    damage: 4.0        # half-hearts (4.0 = 2 hearts)
+    fire-seconds: 3
+  tnt_ring:
+    enabled: true
+    weight: 8
+    count: 4
+    radius: 5.0
+    fuse-seconds: 3.0
+  anvil_rain:
+    enabled: true
+    weight: 8
+    count: 5
+    height: 12
+  sky_drop:
+    enabled: true
+    weight: 8
+    height: 60         # you get a water bucket. MLG or die.
+  fake_creeper:
+    enabled: true
+    weight: 12
+    fuse-ticks: 30
+  fake_ban:
+    enabled: true
+    weight: 6
+  chicken_party:
+    enabled: true
+    weight: 10
+    count: 12
+    lifetime-seconds: 30
+  wrong_destination:
+    enabled: true
+    weight: 8
+  hotbar_shuffle:
+    enabled: true
+    weight: 8
+  drunk:
+    enabled: true
+    weight: 10
+    seconds: 10
+  first_class:
+    enabled: true
+    weight: 2          # the rare good outcome
+    diamonds: 2

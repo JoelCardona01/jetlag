@@ -1,0 +1,51 @@
+prefix: '&8[&bJet Lag&8] &r'
+
+events:
+  charged_creeper: '&e{player} &7ha aterrizado junto a un &acreeper cargado&7. Suerte.'
+  lightning: '&e{player} &7ha recibido un rayo al llegar. Zeus odia los teletransportes.'
+  tnt_ring: '&e{player} &7ha llegado a una &cfiesta de TNT&7. ¡CORRE!'
+  anvil_rain: '&e{player} &7está en una &8tormenta de yunques&7. ¡Mira arriba!'
+  sky_drop: '&e{player} &7ha aterrizado... &fdemasiado alto&7. ¡Hora del MLG!'
+  fake_creeper: '&e{player} &7ha oído un siseo detrás... &a¡sorpresa!'
+  fake_ban: '&e{player} &7ha recibido un ban falso. ¿Habéis visto su cara?'
+  chicken_party: '&e{player} &7ha caído en una &ffiesta de gallinas&7.'
+  wrong_destination: '&e{player} &7se ha equivocado de salida. GPS recalculando...'
+  hotbar_shuffle: '&7A &e{player} &7le han perdido las maletas. ¡Barra mezclada!'
+  drunk: '&e{player} &7tiene un &bjet lag &7horrible.'
+  first_class: '&e{player} &7ha subido a &6&lPRIMERA CLASE&7. ¡Diamantes gratis!'
+
+titles:
+  sky-drop:
+    title: '&b&l¡MLG!'
+    subtitle: '&fTienes un cubo de agua. Úsalo.'
+  fake-ban:
+    title: '&4&lBANEADO'
+    subtitle: '&cMotivo: exceso de teletransportes'
+
+fake-ban-reveal: '&aEra broma. No estás baneado. &7(...todavía)'
+wrong-destination:
+  victim: '&7¡Uy! Has aterrizado junto a &e{target}&7.'
+  target: '&e{player} &7acaba de caer del cielo a tu lado. Salúdale.'
+
+help: |-
+  &b&lJet Lag &7- cada teletransporte tiene efectos secundarios
+  &e/jetlag stats &7- quién lo ha sufrido más
+  &e/jetlag test <evento> [jugador] &7- lanzar un evento
+  &e/jetlag chance [0-100] &7- ver o cambiar la probabilidad
+  &e/jetlag on|off &7- activar o desactivar el plugin
+  &e/jetlag reload &7- recargar config e idioma
+no-permission: '&cNo tienes permiso para hacer eso.'
+reloaded: '&aRecargado. &7{count} eventos activos.'
+enabled: '&aJet Lag activado. Teletranspórtate bajo tu propia responsabilidad.'
+disabled: '&cJet Lag desactivado. Los teletransportes son seguros... de momento.'
+chance-current: '&7Probabilidad actual: &e{chance}%'
+chance-set: '&7Probabilidad cambiada a &e{chance}%'
+chance-invalid: '&cUsa un número entre 0 y 100.'
+test-usage: '&7Uso: /jetlag test <evento> [jugador]. Eventos: &e{events}'
+test-unknown: '&cEvento desconocido. Eventos: &e{events}'
+test-ok: '&aLanzado &e{event} &aen &e{player}&a.'
+test-cannot-run: '&c{event} no se puede lanzar ahora (p. ej. necesita otro jugador conectado, o no estar en el Nether).'
+player-not-found: '&cJugador no encontrado (o ejecútalo desde consola con un nombre).'
+stats-self: '&7Has sufrido Jet Lag &e{count} &7veces.'
+stats-header: '&b&lViajeros con más jet lag:'
+stats-line: '&7#{rank} &e{player} &7- {count}'
