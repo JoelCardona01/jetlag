@@ -95,6 +95,11 @@ The full file is commented: see [`config.yml`](src/main/resources/config.yml).
 # -> build/libs/JetLag-1.0.0.jar
 ```
 
+## Support the project
+
+If Jet Lag made your friends scream, consider supporting development:
+[GitHub Sponsors](https://github.com/sponsors/JoelCardona01)
+
 ## License
 
 [MIT](LICENSE). Use it, fork it, put it in your modpack.
